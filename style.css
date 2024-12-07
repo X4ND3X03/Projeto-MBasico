@@ -1,0 +1,265 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6; 
+    margin: 0; 
+    padding: 0; 
+    background-color: #f4f4f9; 
+    color: #333; 
+    box-shadow: #1a1919;
+}
+a {
+
+    color: #007acc; 
+    transition: color 0.3s ease; 
+}
+a:hover {
+    color: #4f7e9b; 
+}
+h1, h2, h3 {
+    margin-bottom: 0.5rem; 
+    color: #6b00c2;
+    align-items: center;
+
+}
+
+/*CABEÇALHO*/
+header{
+    background-color: #6b00c2; 
+    color: #fff; 
+    padding: 1rem 0; 
+    position: sticky; 
+    top: 0;
+    z-index: 1000; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    height: 100px;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+header .menu{
+    display: flex;
+    list-style: none;
+}
+header .menu a{
+    color: white;
+    font-weight: bold;
+}
+header .menu li{
+    margin: 0 1rem;
+}
+header .menu ul{
+    list-style: none;
+}
+header .logo {
+    padding-left: 50px;
+    width: 100px;
+    height: 100px;
+}
+header .pesquisa{
+    padding-right: 50px;
+    display: flex;
+}
+header.pesquisa input{
+    padding: 0.5rem; 
+    border: none; 
+    border-radius: 5px 0 0 5px; 
+}
+
+header .pesquisa button{
+    padding: 0.5rem 1rem; 
+    border: none; 
+    background-color: #9347d1; 
+    color: #fff;
+    cursor: pointer; 
+    border-radius: 0 5px 5px 0; 
+    transition: background-color 0.3s ease; 
+}
+header .pesquisa button:hover {
+    background-color: #711eb6;
+}
+/*INTRODUÇÃO*/
+main{
+    text-align: center;
+    background-color: white;
+    box-shadow: #333;
+}
+/*CONTEUDO*/
+.conteudo h2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conteudo{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 8px;
+    background-color: #ffffff;    
+
+
+}
+.conteudo article{
+    flex-direction: row;
+}
+.conteudo p{
+    display: flex;
+}
+.conteudo img{
+    width: 320px;
+    height: 250px;
+}
+.conteudo button{
+    padding: 0.5rem 1rem; 
+    border: none; 
+    background-color: #9347d1; 
+    color: #fff;
+    cursor: pointer; 
+    border-radius: 0 5px 5px 0; 
+    transition: background-color 0.3s ease; 
+}
+
+
+.conteudo .conteudo-front{
+    box-shadow: #333;
+    margin: 0 auto ;
+}
+/*video*/
+.videos{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5%;
+}
+.videos h2
+.videos div{
+    width: 90%;
+    height: 95%;
+    align-items: center;
+    margin: 2%;
+}
+.videos iframe{
+    width: 400px;
+    height: 250px;
+    border: 3px solid #9347d1   ;
+}
+/*ESPECIALISTAS*/
+.especialista{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 8px;
+    background-color: white;
+}
+.especialista .expert img{
+    width: 80%;
+    height: 80%;
+}
+.especialista .expert2 img{
+    width: 55%;
+    height: 55%;
+}
+/*formulario de contato*/
+.form-contato{
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #F4F4F9;
+}
+
+.form-contato form{
+    width: 90%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #b7b6b8;
+    box-shadow: #1a1919;
+    gap: 1rem;
+
+}
+
+.form-contato form div{
+    width: 50%;
+    height: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.form-contato form div label{
+    width: 100%;
+    height: 20%;
+    font-size: 1.4rem; 
+}
+
+.form-contato form div input{
+    width: 100%;
+    height: 20%;
+    font-size: 1.1rem;
+    border-radius: 2px; 
+}
+
+.form-contato form div select{
+    width: 100%;
+    height: 30%;
+    border-radius: 2px;
+}
+
+.mensagem{
+    width: 100%;
+    height: 100%;
+    border-radius: 2px;
+    
+}
+
+.form-contato form button{
+    width: 30%;
+    height: 2.1rem;
+    margin-top: 1rem;
+    border: 2px;
+    background-color: #9347d1;
+    color: #ffffff;
+    cursor: pointer; 
+    border-radius: 0 5px 5px 0; 
+    transition: background-color 0.3s ease; 
+    
+
+}
+/*RODA PÉ*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: #6b00c2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer a{
+    color: white;
+    
+}
+footer p{
+    color: white;
+}

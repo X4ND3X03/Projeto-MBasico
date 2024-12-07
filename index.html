@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="projeto_final.css">
+    <title>Biblioteca</title>
+</head>
+<body>
+    <!---CABEÇALHO-->
+    <header>
+        <nav>
+            <img src="logo.png" 
+            alt="Logotipo"
+            class="logo">
+            <ul class="menu">
+                <li><a href="#inicio">Ínicio</a></li>
+                <li><a href="#conteudo">Conteúdo</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="especialistas">Bibliotecários</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#roda-pe">Roda-Pé</a></li>
+            </ul>
+            <form class="pesquisa">
+                <input type="text" placeholder="Pesquisar" required>
+                <button type="submit" >Buscar</button>
+            </form>
+        </nav>
+    </header>
+    <main > 
+        <!--INTRODUÇÃO-->
+        <section id="inicio">
+            <h1>Bem-vindo a Biblioteca Dev</h1>
+            <p>Local onde você encontrá livros de programação de todos os tipos para a sua aprendizagem.</p>
+        </section>
+        <!--CONTEÚDO-->
+        <h2>Ultimos livros</h2>        <section class="conteudo" id="conteudo">
+            
+            <article>
+                <div class="conteudo-front">
+                    <h3>Front-end</h3>
+                    <img src="frontend.png" alt="Imagem sobre front-end">
+                    <p>Amplie seu conhecimento sobre Front-end.</p>
+                    <button ><link href="Apostila-Programacao-WEB_HTML_CSS.pdf">Leia Mais</button>
+                </div>
+            </article>
+            <article>
+                <div class="conteudo-back">
+                    <h3>Back-end</h3>
+                    <img src="backend.jpg" alt="Imagem sobre o back-end">
+                    <p>Amplie seu conhecimento sobre Back-end.</p>
+                    <button onclick="alert('Lendo livro sobre Back-end!')">Leia Mais</button>
+                </div>
+            </article>
+        </section>
+        <!--videos-->
+        <h2>videos</h2>
+        <section class="videos" id="videos">
+            
+            <div>
+                <iframe src="https://www.youtube.com/embed/exemplo" frameborder="0"></iframe>
+            </div>
+            <div>
+                <iframe src="https://www.youtube.com/embed/exemplo" frameborder="0"></iframe>
+            </div>
+        </section>
+        <!--especialistas-->
+        <h2>Especialistas</h2>
+        <section class="especialista" id="especialistas">
+            
+            <div class="expert">
+                <img src="avatar1.jpg" alt="">
+                <h3>Robson Oliveira</h3>
+                <p>Bibliotecário</p>
+                <a href="">Conversar</a>
+            </div>
+            <div class="expert2">
+                <img src="avatar2.avif" alt="">
+                <h3>Pedro Silva</h3>
+                <p>Bibliotecário</p>
+                <a href="">Conversar</a>
+            </div>
+        </section>
+        <!--formulario de contato-->
+        <section class="form-contato" id="contato">
+            <form>
+                <div>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                </div>
+                
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+                </div>
+                
+                <div>
+                    <label for="assunto">Assunto:</label>
+                    <select id="assunto" name="assunto" required>
+                        <option value="">Selecione um assunto</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="reclamacao">Reclamação</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea class="mensagem" id="mensagem" name="mensagem" placeholder="Digite sua mensagem" 
+                    rows="5" required></textarea>
+                </div>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <!--RODA PÉ-->
+    <footer id="roda-pe">
+        
+            <a href="#politica"> Política de privacidade</a><br>
+            <a href="#termos"> Termos de Uso</a><br>
+            <a href="#ajuda"> Ajuda </a><br>
+            <a href="instagram.com">Instagram</a>
+            <a href="gmail.com">E-mail</a>
+            <p>telefone (85) 4002-8922</p>
+    </footer>
+</body>
+</html>
